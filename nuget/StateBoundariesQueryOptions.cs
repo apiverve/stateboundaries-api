@@ -12,7 +12,6 @@ namespace APIVerve.API.StateBoundaries
     {
         /// <summary>
         /// The 2 Letter State Code (e.g., CA)
-        /// Example: CA
         /// </summary>
         [JsonProperty("state")]
         public string State { get; set; }
