@@ -63,7 +63,6 @@ namespace APIVerve.API.StateBoundaries
         public long Gid { get; set; }
 
         [JsonProperty("arealand")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Arealand { get; set; }
 
         [JsonProperty("division")]
@@ -79,14 +78,12 @@ namespace APIVerve.API.StateBoundaries
         public long Objectid { get; set; }
 
         [JsonProperty("areawater")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Areawater { get; set; }
 
         [JsonProperty("intptlon")]
         public double Intptlon { get; set; }
 
         [JsonProperty("oid")]
-        [JsonConverter(typeof(ParseStringConverter))]
         public long Oid { get; set; }
 
         [JsonProperty("funcstat")]
