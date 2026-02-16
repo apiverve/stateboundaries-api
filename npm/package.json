@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/stateboundaries",
-  "version": "1.1.13",
+  "version": "1.1.14",
   "description": "State Boundaries is a simple tool for getting the boundaries of a specific state's border. It returns the shape of the specified state's border.",
   "main": "index.js",
   "types": "index.d.ts",
