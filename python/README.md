@@ -6224,8 +6224,9 @@ from apiverve_stateboundaries.apiClient import StateboundariesAPIClient
 
 api = StateboundariesAPIClient("[YOUR_API_KEY]")
 
+query = { "state": "CA" }
+
 try:
-    query = { "state": "CA" }
     result = api.execute(query)
     print(result)
 finally:
