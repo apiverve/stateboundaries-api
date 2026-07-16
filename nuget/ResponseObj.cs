@@ -25,6 +25,9 @@ namespace APIVerve.API.StateBoundaries
 
         [JsonProperty("data")]
         public Data Data { get; set; }
+
+        [JsonProperty("premium")]
+        public Premium Premium { get; set; }
     }
 
     public partial class Data
@@ -51,7 +54,7 @@ namespace APIVerve.API.StateBoundaries
     public partial class Geometry
     {
         [JsonProperty("coordinates")]
-        public double[][][][] Coordinates { get; set; }
+        public double?[][][][] Coordinates { get; set; }
 
         [JsonProperty("type")]
         public string Type { get; set; }
@@ -60,37 +63,37 @@ namespace APIVerve.API.StateBoundaries
     public partial class Properties
     {
         [JsonProperty("gid")]
-        public long Gid { get; set; }
+        public long? Gid { get; set; }
 
         [JsonProperty("arealand")]
-        public long Arealand { get; set; }
+        public long? Arealand { get; set; }
 
         [JsonProperty("division")]
-        public long Division { get; set; }
+        public long? Division { get; set; }
 
         [JsonProperty("intptlat")]
-        public double Intptlat { get; set; }
+        public double? Intptlat { get; set; }
 
         [JsonProperty("name")]
         public string Name { get; set; }
 
         [JsonProperty("objectid")]
-        public long Objectid { get; set; }
+        public long? Objectid { get; set; }
 
         [JsonProperty("areawater")]
-        public long Areawater { get; set; }
+        public long? Areawater { get; set; }
 
         [JsonProperty("intptlon")]
-        public double Intptlon { get; set; }
+        public double? Intptlon { get; set; }
 
         [JsonProperty("oid")]
-        public long Oid { get; set; }
+        public long? Oid { get; set; }
 
         [JsonProperty("funcstat")]
         public string Funcstat { get; set; }
 
         [JsonProperty("centlon")]
-        public double Centlon { get; set; }
+        public double? Centlon { get; set; }
 
         [JsonProperty("stusab")]
         public string Stusab { get; set; }
@@ -102,7 +105,7 @@ namespace APIVerve.API.StateBoundaries
         public string Statens { get; set; }
 
         [JsonProperty("centlat")]
-        public double Centlat { get; set; }
+        public double? Centlat { get; set; }
 
         [JsonProperty("basename")]
         public string Basename { get; set; }
@@ -111,7 +114,7 @@ namespace APIVerve.API.StateBoundaries
         public string Mtfcc { get; set; }
 
         [JsonProperty("region")]
-        public long Region { get; set; }
+        public long? Region { get; set; }
 
         [JsonProperty("lsadc")]
         public string Lsadc { get; set; }
@@ -126,9 +129,21 @@ namespace APIVerve.API.StateBoundaries
     public partial class GeoPoint2D
     {
         [JsonProperty("lon")]
-        public double Lon { get; set; }
+        public double? Lon { get; set; }
 
         [JsonProperty("lat")]
-        public double Lat { get; set; }
+        public double? Lat { get; set; }
+    }
+
+    public partial class Premium
+    {
+        [JsonProperty("message")]
+        public string Message { get; set; }
+
+        [JsonProperty("upgrade_url")]
+        public Uri UpgradeUrl { get; set; }
+
+        [JsonProperty("locked_fields")]
+        public string[] LockedFields { get; set; }
     }
 }
