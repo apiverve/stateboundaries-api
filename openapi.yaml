@@ -2,8 +2,10 @@ openapi: 3.0.4
 info:
   title: State Boundaries
   description: >-
-    State Boundaries is a simple tool for getting the boundaries of a specific
-    state's border. It returns the shape of the specified state's border.
+    State Boundaries provides GeoJSON data and Census identifiers for US states
+    using a two-letter postal code. Responses include the state name, FIPS code,
+    and GEOID; paid plans add border polygon coordinates and land area
+    measurements.
   termsOfService: https://apiverve.com/terms/
   contact:
     name: APIVerve Support
@@ -18,7 +20,7 @@ servers:
 paths:
   /v1/stateboundaries:
     get:
-      summary: Get State Boundaries
+      summary: State Boundaries
       description: >-
         State Boundaries is a simple tool for getting the boundaries of a
         specific state's border. It returns the shape of the specified state's
