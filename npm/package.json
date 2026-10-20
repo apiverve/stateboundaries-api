@@ -1,7 +1,7 @@
 {
   "name": "@apiverve/stateboundaries",
-  "version": "1.2.0",
-  "description": "State Boundaries is a simple tool for getting the boundaries of a specific state's border. It returns the shape of the specified state's border.",
+  "version": "1.2.2",
+  "description": "State Boundaries provides GeoJSON data and Census identifiers for US states using a two-letter postal code. Responses include the state name, FIPS code, and GEOID; paid plans add border polygon coordinates and land area measurements.",
   "main": "index.js",
   "types": "index.d.ts",
   "sideEffects": false,
@@ -23,7 +23,7 @@
     "directory": "npm"
   },
   "keywords": [
-    "state boundaries", "state boundaries api", "state boundaries tool", "state boundaries software", "state boundaries service"
+    "state boundaries api", "us state borders geojson", "get state boundary coordinates", "us state border polygon", "state fips code lookup"
   ],
   "author": {
     "name": "APIVerve",
@@ -34,7 +34,7 @@
   "bugs": {
     "url": "https://github.com/apiverve/stateboundaries-api/issues"
   },
-  "homepage": "https://apiverve.com/marketplace/stateboundaries?utm_source=npm&utm_medium=homepage",
+  "homepage": "https://apiverve.com/marketplace/stateboundaries?utm_source=npm&utm_medium=referral&utm_content=homepage",
   "devDependencies": {
     "mocha": "^11.0.1",
     "chai": "^5.1.2",
