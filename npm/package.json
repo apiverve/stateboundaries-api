@@ -1,6 +1,6 @@
 {
   "name": "@apiverve/stateboundaries",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "description": "State Boundaries provides GeoJSON data and Census identifiers for US states using a two-letter postal code. Responses include the state name, FIPS code, and GEOID; paid plans add border polygon coordinates and land area measurements.",
   "main": "index.js",
   "types": "index.d.ts",
